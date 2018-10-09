@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tinnes Studie</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.addEventListener("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 100);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-full">
+        <!-- Første Billede -->
+        <div class="bgimg-1">
+            <div class="row">
+                <div class="col-md-2 my_center_div">
+                    <h1>Velkommen</h1>
+                    <p>Scroll ned</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my_row">
+            <a class="anchor" name="om"></a>
+            <div class="col-lg-6 center">
+                <h2>Mit navn er Tinne</h2>
+                <p>Lorem ipsum dolor sit amet, aliquam aliquet aliquam eum, lectus at scelerisque dolor sapiente, et ut
+                    quam urna sem praesent, luctus vehicula nec adipiscing quam nec, nec sed pellentesque placerat. Sed
+                    aenean sit felis leo interdum mi, eget aenean neque sed, velit nec dui netus donec, netus dui
+                    feugiat sed dolor eget non. Rhoncus nunc nisl, id risus dui non quis aliquet, ligula adipiscing
+                    neque amet. Nulla proin sed erat nascetur eu eros. Elit egestas sed est sociosqu nunc magna, purus
+                    lacus, iaculis risus donec a ante. Dolor neque ultricies rhoncus tincidunt vel, tellus in facilisi
+                    sollicitudin libero proin, libero et. Scelerisque sociis urna felis, ac quisque enim massa
+                    facilisis tempora molestie, donec et montes, malesuada libero odio nulla morbi. Varius et gravida
+                    torquent feugiat. Eros et egestas mi et sed scelerisque, velit donec in, ultricies massa. Bibendum
+                    amet nunc sed amet.</p>
+                <a href="https://goo.gl/maps/YiLvfAkMcr62"><i style="font-size: 35px;color:orangered;" class="fas fa-map-marker-alt"></i></a>
+                <p class="skive">7800 Skive</p>
+            </div>
+
+        </div>
+
+        <!-- Andet Billede -->
+        <div class="bgimg-2"></div>
+
+        <div class="row my_row">
+            <a class="anchor" name="portfolio"></a>
+            <div class="col-lg-6 center">
+                <h2>Portfolio</h2>
+                <div class="row">
+                    <div class="col-lg-4 port_col"><img src="images/port1.jpg" alt=""></div>
+                    <div class="col-lg-4 port_col"><img src="images/port2.jpg" alt=""></div>
+                    <div class="col-lg-4 port_col"><img src="images/port3.jpg" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 port_col"><img src="images/port4.jpg" alt=""></div>
+                    <div class="col-lg-4 port_col"><img src="images/port5.jpg" alt=""></div>
+                    <div class="col-lg-4 port_col"><img src="images/port6.jpg" alt=""></div>
+                </div>
+            </div>
+            <!-- <div class="port_menu center">
+                <ul>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                    <li><a href="#">Project 4</a></li>
+                    <li><a href="#">Project 5</a></li>
+                    <li><a href="#">Project 6</a></li>
+                </ul>
+            </div> -->
+        </div>
+
+        <!-- Tredje Billede -->
+        <div class="bgimg-3"></div>
+
+        <div class="row my_row">
+            <a class="anchor" name="kontakt"></a>
+            <div class="col-lg-6 center">
+                <h2>Kontakt</h2>
+                <form role="form" id="contact-form" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="Name" autocomplete="off" id="Name"
+                                    placeholder="Navn" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" autocomplete="off" id="email"
+                                    placeholder="E-mail" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control textarea" rows="3" name="Message" id="Message"
+                                    placeholder="Besked" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn main-btn pull-right">Send en besked</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- Fjerde Billede -->
+        <div class="bgimg-1"></div>
+        <div class="my_fixed_nav">
+
+            <ul>
+                <li><a href="#om">Om</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+
+</html>
