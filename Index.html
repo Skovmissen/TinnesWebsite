@@ -16,6 +16,12 @@
         window.addEventListener("hashchange", function () {
             window.scrollTo(window.scrollX, window.scrollY - 100);
         });
+		$(document).ready(function () {
+    if(window.location.href.indexOf("sendt") > -1) {
+       alert("Tak for din henvendelse");
+	   window.location = window.location.href.split("#")[0];
+    }
+});
     </script>
 </head>
 
@@ -85,14 +91,14 @@
         <div class="bgimg-3"></div>
 
         <div class="row my_row">
-            <a class="anchor" name="kontakt"></a>
+            <a class="anchor" name="kontakt" method="POST"></a>
             <div class="col-lg-6 center">
                 <h2>Kontakt</h2>
-                <form role="form" id="contact-form" class="contact-form">
+                <form action="db.php" id="contact-form" class="contact-form">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="Name" autocomplete="off" id="Name"
+                                <input type="text" class="form-control" name="navn" autocomplete="off" id="Name"
                                     placeholder="Navn" required>
                             </div>
                         </div>
@@ -106,7 +112,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea class="form-control textarea" rows="3" name="Message" id="Message"
+                                <textarea class="form-control textarea" rows="3" name="besked" id="Message"
                                     placeholder="Besked" required></textarea>
                             </div>
                         </div>
